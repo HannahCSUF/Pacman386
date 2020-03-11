@@ -169,14 +169,14 @@ class Ghost(Sprite):
                     rand = random.choice(self.directions_remain)
                     self.moveD = rand
 
-            elif self.rect.y is 300 and 190 < self.rect.x < 400:
-                self.reanimate()
-                if 280 < self.rect.x < 301:
+            elif 295 < self.rect.y < 320 and 265 < self.rect.x < 305:
+                if 265 < self.rect.x < 305:
                     self.moveD = "d"
-                elif self.rect.x < 280:
+                    self.reanimate()
+                elif self.rect.x < 286:
                     self.moveD = "r"
                     # self.reanimate()
-                elif self.rect.x > 301:
+                elif self.rect.x > 286:
                     self.moveD = "l"
                     # self.reanimate()
 
